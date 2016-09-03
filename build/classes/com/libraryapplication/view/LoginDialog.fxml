@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="270.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapplication.LoginController">
+   <children>
+      <Label layoutX="39.0" layoutY="53.0" text="Please Provide a username, password and the status to login" />
+      <Label fx:id="errorLabel" layoutX="39.0" layoutY="81.0" text="Label" textFill="#eb1d0a" />
+      <TextField fx:id="usernameField" layoutX="39.0" layoutY="110.0" prefHeight="25.0" prefWidth="427.0" promptText="Username" />
+      <Button layoutX="253.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleExit" text="Close" />
+      <Button layoutX="176.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+      <PasswordField fx:id="passwordField" layoutX="39.0" layoutY="147.0" prefHeight="25.0" prefWidth="427.0" promptText="Password" />
+   </children>
+</AnchorPane>

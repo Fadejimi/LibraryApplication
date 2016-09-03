@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapplication.AdminController">
+   <children>
+      <TabPane prefHeight="464.0" prefWidth="607.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Users">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="userTable" layoutX="14.0" layoutY="14.0" prefHeight="327.0" prefWidth="581.0">
+                          <columns>
+                            <TableColumn fx:id="userIdColumn" prefWidth="75.0" text="UserId" />
+                            <TableColumn fx:id="userNameColumn" prefWidth="204.0" text="Name" />
+                              <TableColumn fx:id="usernameColumn" prefWidth="156.0" text="Username" />
+                              <TableColumn fx:id="topicColumn" prefWidth="145.0" text="Topic" />
+                          </columns>
+                        </TableView>
+                        <HBox layoutX="446.0" layoutY="349.0" spacing="20.0">
+                           <children>
+                              <Button layoutX="420.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleDeleteUser" text="Delete" />
+                              <Button layoutX="515.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleNewUser" text="Create New" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Books">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="bookTable" layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="579.0">
+                          <columns>
+                            <TableColumn fx:id="bookIdColumn" prefWidth="75.0" text="BookId" />
+                            <TableColumn fx:id="bookTopicColumn" prefWidth="227.0" text="Topic Name" />
+                              <TableColumn fx:id="bookNameColumn" prefWidth="269.0" text="Book Name" />
+                          </columns>
+                        </TableView>
+                        <HBox layoutX="444.0" layoutY="396.0" spacing="20.0">
+                           <children>
+                              <Button layoutX="420.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleDeleteBook" text="Delete" />
+                              <Button layoutX="515.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleNewBook" text="Create New" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Topics">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="topicTable" layoutX="14.0" layoutY="14.0" prefHeight="377.0" prefWidth="583.0">
+                          <columns>
+                            <TableColumn fx:id="topicIdColumn" prefWidth="87.0" text="TopicId" />
+                            <TableColumn fx:id="topicNameColumn" prefWidth="490.0" text="Topic Name" />
+                          </columns>
+                        </TableView>
+                        <HBox layoutX="448.0" layoutY="396.0" spacing="20.0">
+                           <children>
+                              <Button layoutX="420.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleDeleteTopic" text="Delete" />
+                              <Button layoutX="515.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleNewTopic" text="Create New" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

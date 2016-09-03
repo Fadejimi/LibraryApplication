@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="155.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapplication.BookDialogController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="90.0" prefWidth="551.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="118.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="433.0" minWidth="10.0" prefWidth="433.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Book Name" />
+            <TextField fx:id="bookNameField" GridPane.columnIndex="1" />
+            <Label text="Topic" GridPane.rowIndex="1" />
+            <ComboBox fx:id="topicBox" prefHeight="25.0" prefWidth="438.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <HBox layoutX="456.0" layoutY="116.0" spacing="20.0">
+         <children>
+            <Button fx:id="handleSubmit" layoutX="482.0" layoutY="116.0" mnemonicParsing="false" text="Submit" />
+            <Button fx:id="handleExit" layoutX="530.0" layoutY="116.0" mnemonicParsing="false" text="Exit" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
